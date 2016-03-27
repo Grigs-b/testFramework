@@ -1,0 +1,36 @@
+{
+  "name": "MantleXMLAdapter",
+  "platforms": {
+    "ios": "5.0"
+  },
+  "version": "0.2.2",
+  "summary": "MantleXMLAdapter adds support to Mantle to create MTLModel objects from xml documents and (optionally) from models into xml documents.",
+  "homepage": "https://github.com/mbaranowski/MantleXMLAdapter",
+  "license": "MIT",
+  "authors": {
+    "Matthew Baranowski": "matt.baranowski@willowtreeapps.com"
+  },
+  "source": {
+    "git": "https://github.com/mbaranowski/MantleXMLAdapter.git",
+    "tag": "0.2.2"
+  },
+  "source_files": [
+    "Mantle/MTLXMLAdapter.{h,m}",
+    "Mantle/NSValueTransformer+MTLXMLTransformerAdditions.{h,m}"
+  ],
+  "dependencies": {
+    "KissXML": [
+
+    ],
+    "Mantle": [
+
+    ]
+  },
+  "requires_arc": true,
+  "xcconfig": {
+    "HEADER_SEARCH_PATHS": "$(SDKROOT)/usr/include/libxml2",
+    "OTHER_CFLAGS": "$(inherited) -DDDXML_LIBXML_MODULE_ENABLED=1",
+    "OTHER_SWIFT_FLAGS": "$(inherited) -DDDXML_LIBXML_MODULE_ENABLED"
+  },
+  "libraries": "xml2"
+}

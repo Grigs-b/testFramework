@@ -1,0 +1,33 @@
+PODS:
+  - KissXML (5.0.3):
+    - KissXML/Standard (= 5.0.3)
+  - KissXML/Core (5.0.3)
+  - KissXML/Standard (5.0.3):
+    - KissXML/Core
+  - libextobjc/EXTKeyPathCoding (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - Mantle (1.1):
+    - libextobjc/EXTKeyPathCoding
+    - libextobjc/EXTScope
+  - MantleXMLAdapter (0.2.2):
+    - KissXML
+    - Mantle
+
+DEPENDENCIES:
+  - Mantle (= 1.1)
+  - MantleXMLAdapter (from `vendor/MantleXMLAdapter`)
+
+EXTERNAL SOURCES:
+  MantleXMLAdapter:
+    :path: vendor/MantleXMLAdapter
+
+SPEC CHECKSUMS:
+  KissXML: d19dd6dc65e0dc721ba92b3077b8ebdd240f1c1e
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  Mantle: b845e41574b94ddc7aa38eb38f0e6853d08871f6
+  MantleXMLAdapter: a617f19b0f955ca9215d7441a40bf43ac332324f
+
+COCOAPODS: 0.39.0
